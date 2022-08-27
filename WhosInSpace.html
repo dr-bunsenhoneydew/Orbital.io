@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link rel="stylesheet" href="style.css">
+        <link href="tailwind.css"rel="stylesheet" />
+		<title>Orbital.io</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Lato:wght@300&display=swap" rel="stylesheet">
+		<style>
+			body { margin: 0; -webkit-font-smoothing: antialiased; }
+            
+		</style>
+	</head>
+    <body class="h-full bg-black">
+        <nav class="bg-black shadow-lg">
+            <div class="max-w-6xl mx-auto px-4">
+              <div class="flex justify-between">
+                <div class="flex space-x-7">
+                  <div>
+                    <a href="#" class="flex items-center py-4 px-2">
+                      <img src="photos/astronaut2.jpg" alt="Logo" class="h-10 w-9 mr-6">
+                      <span id="brand" class="font-semibold text-blue-200 text-2xl">Orbital.io</span>
+                    </a>
+                  </div>
+                  <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-white  font-semibold ">Home</a>
+                    <a href="WhatsInSpace.html" class="py-4 px-2 text-white  font-semibold hover:text-blue-200 transition duration-300">What's in Space?</a>
+                    <a href="TheSpaceStation.html" class="py-4 px-2 text-white  font-semibold hover:text-blue-200 transition duration-300">The Space Station</a>
+                    <a href="WhosInSpace.html" class="py-4 px-2 text-white font-semibold hover:text-blue-200 transition duration-300 border-b-4 border-blue-200">Who's In Space?</a>
+                  </div>
+                </div>
+    
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                  <svg class=" w-6 h-6 text-gray-500 hover:text-blue-200 "
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden mobile-menu text-center">
+              <ul class="">
+                <li><a href="index.html" class="block text-white text-sm px-2 py-4 hover:bg-blue-200 hover:text-black transition duration-300">Home</a></li>
+                <li><a href="WhatsInSpace.html" class="block text-white text-sm px-2 py-4 hover:bg-blue-200 hover:text-black transition duration-300">What's in Space?</a></li>
+                <li><a href="TheSpaceStation.html" class="block text-white text-sm px-2 py-4 hover:bg-blue-200 hover:text-black transition duration-300">The Space Station</a></li>
+                <li><a href="WhosInSpace.html" class="block text-sm px-2 py-4 bg-blue-200 font-semibold">Who's In Space?</a></li>
+              </ul>
+            </div>
+            <script>
+              const btn = document.querySelector("button.mobile-menu-button");
+              const menu = document.querySelector(".mobile-menu");
+              btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+              });
+            </script>
+        </nav>
+
+
+        <!--Hero Section-->
+        <section id= "hero" class="">
+            <div id="heroContainer">
+              <div class="text-white h-full bg-center text-center bg-cover ml-24 mr-24">
+                <h1 class="text-white text-5xl mb-20 mt-32 font-exo text-center">Who's In Space?</h1>
+
+                <div class="ml-0">
+                    <p class="text-white text-3xl font-exo mb-20 text-center">Astronauts Currently On The Space Station</p>
+                    
+                    
+                    <div id ="astronaut" class="grid grid-cols-2 gap-16 mb-20">
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <div>
+                                <p class="text-2xl font-bold">Oleg Artemyev</p>
+                                <img src="./photos/Oleg_Artemyev.jpeg" alt="" class="h-60 w-44 rounded mx-auto">
+                            </div>
+                        </div>
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <p class=""><span class="font-bold">Oleg Germanovich Artemyev</span> (Russian: Олег Германович Артемьев; born December 28, 1970) is a Russian Cosmonaut for the Russian Federal Space Agency. He was selected as part of the RKKE-15 Cosmonaut group in 2003. He was a flight engineer of Expedition 39 and 40 to the International Space Station, in 2018 he returned to space as the Commander of Soyuz MS-08, and in 2022 he returned to space as the Commander of Soyuz MS-21.</p>
+                        </div>
+                        <div class="col-span-2">
+                            <hr>
+                        </div> 
+
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <div>
+                                <p class="text-2xl font-bold">Denis Matveev</p>
+                                <img src="./photos/Denis_Matveev.jpeg" alt="" class="h-60 w-44 rounded mx-auto">
+                            </div>
+                        </div>
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <p class=""><span class="font-bold">Denis Vladimirovich Matveev</span> (Russian Cyrillic: Денис Владимирович Матвеев; born April 25, 1983 in Leningrad, RSFSR, now St. Petersburg, Russia) is a Russian cosmonaut. Matveev received his degree in computing and networks from the Bauman Moscow State Technical University in 2006. After graduation, Matveev began working at the Yuri Gagarin Cosmonaut Training Center in Star City, Russia as a junior research assistant. He was promoted to engineer in 2009. Matveev was selected as a cosmonaut in 2010. He was appointed to begin training on October 12, 2010 and was named a test cosmonaut on July 31, 2012.</p>
+                        </div>
+                        <div class="col-span-2">
+                            <hr>
+                        </div> 
+
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <div>
+                                <p class="text-2xl font-bold">Sergey Korsakov</p>
+                                <img src="./photos/Sergey_Korsakov.jpeg" alt="" class="h-60 w-44 rounded mx-auto">
+                            </div>
+                        </div>
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <p class=""><span class="font-bold">Sergey Vladimirovich Korsakov</span> (Russian Cyrillic: Сергей Владимирович Корсаков; born 1 September 1984 in Frunze, Kirghiz SSR) is a Russian cosmonaut selected by Roscosmos in 2012. He was scheduled to make his first flight into space in April 2021 as a flight engineer aboard Soyuz MS-18 ahead of a stay aboard the International Space Station; but was replaced on the crew by Mark Vande Hei in March of that year. He was then assigned to Soyuz MS-21, which launched successfully March 18, 2022.</p>
+                        </div>
+                        <div class="col-span-2">
+                            <hr>
+                        </div> 
+
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <div>
+                                <p class="text-2xl font-bold">Kjell Lindgren</p>
+                                <img src="./photos/Kjell_Lindgren.jpeg" alt="" class="h-60 w-44 rounded mx-auto">
+                            </div>
+                        </div>
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <p class=""><span class="font-bold">Dr. Kjell Norwood Lindgren</span> (born January 23, 1973) is an American astronaut who was selected in June 2009 as a member of the NASA Astronaut Group 20. Kjell spent most of his childhood abroad and returned to the U.S. to complete his education and earn a Doctorate of Medicine from the University of Colorado.  He is board certified in emergency medicine.  After serving as the Deputy Crew Surgeon for STS-130 and Expedition 24, he was selected as an astronaut in June 2009 as one of 14 members of the 20th NASA astronaut class.  Dr. Lindgren flew on Expedition 44/45 and logged 141 days in space.  He participated in two spacewalks and in more than a hundred different scientific experiments.  He is currently living and working aboard the International Space Station as commander of the NASA SpaceX Crew-4.</p>
+                        </div>
+                        <div class="col-span-2">
+                            <hr>
+                        </div> 
+
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <div>
+                                <p class="text-2xl font-bold">Robert Hines</p>
+                                <img src="./photos/Robert_Hines.jpeg" alt="" class="h-60 w-44 rounded mx-auto">
+                            </div>
+                        </div>
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <p class=""><span class="font-bold">Robert Thomas Hines, Jr.</span> (born January 11, 1975) is an American fighter pilot and NASA astronaut. Bob Hines was selected by NASA to join the 2017 Astronaut Candidate Class.  He reported to the Astronaut Office in August 2017.  He has served more than 21 years in the United State Air Force (USAF) as an instructor pilot, fighter pilot, and a test pilot.  Before his selection in 2017, he was serving as a Research Pilot at NASA’s Johnson Space Center.  He has accumulated more than 3,500 hours of flight time in 50 different types of aircraft and has flown 76 combat missions in 3 different aircraft types while supporting contingency operations around the world.  He is currently serving as a pilot for NASA's SpaceX Crew-4 mission to the ISS, which launched on April 27, 2022.</p>
+                        </div>
+                        <div class="col-span-2">
+                            <hr>
+                        </div> 
+
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <div>
+                                <p class="text-2xl font-bold">Samantha Cristoforetti</p>
+                                <img src="./photos/Samantha_Cristoforetti.jpeg" alt="" class="h-60 w-44 rounded mx-auto">
+                            </div>
+                        </div>
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <p class=""><span class="font-bold">Samantha Cristoforetti</span> was born in Milan on 26 April 1977 and is an Italian European Space Agency astronaut and former Italian Air Force pilot and engineer. She holds the record for the longest uninterrupted spaceflight by a European astronaut (199 days, 16 hours), and until June 2017 held the record for the longest single space flight by a woman until this was broken by Peggy Whitson and later by Christina Koch. She is also the first Italian woman in space. She was scheduled to take command of ISS Expedition 68 in 2022. In December 2021, Politico Europe named her as one of the "dreamers" in its annual list of the 28 most influential people in Europe.</p>
+                        </div>
+                        <div class="col-span-2">
+                            <hr>
+                        </div> 
+
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <div>
+                                <p class="text-2xl font-bold">Jessica Watkins</p>
+                                <img src="./photos/Jessica_Watkins.jpeg" alt="" class="h-60 w-44 rounded mx-auto">
+                            </div>
+                        </div>
+                        <div class="bg-black text-white h-auto col-span-2 lg:col-span-1 flex items-center justify-center">
+                            <p class=""><span class="font-bold">Jessica Andrea Watkins</span> (born May 14, 1988) is an American NASA astronaut, geologist, aquanaut and former international rugby player. Jessica was selected by NASA to join the 2017 Astronaut Candidate Class.  Watkins reported for duty in August 2017 and completed two years of training as an astronaut candidate.  The Colorado native earned a Bachelor of Science in Geological and Environmental Sciences from Stanford University, and a Doctorate in Geology from the University of California, Los Angeles (UCLA).  Dr. Watkins conducted her graduate research on the emplacement mechanisms of large landslides on Mars and Earth.  She has worked at NASA’s Ames Research Center and NASA’s Jet Propulsion Laboratory, and was a science team collaborator for NASA’s Mars Science Laboratory rover, Curiosity.  Watkins is currently serving as a mission specialist on NASA’s SpaceX Crew-4 mission to the International Space Station, which launched on April 27, 2022.</p>
+                        </div>
+                        <div class="col-span-2">
+                            <hr>
+                        </div> 
+
+
+
+
+                        
+                    </div>
+
+
+
+
+                </div>
+
+                <!--
+                    <div class="flex-1 lg:flex-auto lg:w-1/3 text-center">
+                            <p class="">Oleg Artemyev</p>
+                            <img src="./photos/Oleg_Artemyev.jpeg" alt="" class="h-60 w-40 rounded">
+                        </div>
+                        <div class="flex-1 md:w-full lg:flex-auto lg:w-2/3 bg-gray-500">
+                            <div class="flex justify-start items-center">
+                                <p class="items-center text-center">
+                                    Oleg Germanovich Artemyev (Russian: Олег Германович Артемьев; born December 28, 1970) is a Russian Cosmonaut for the Russian Federal Space Agency. He was selected as part of the RKKE-15 Cosmonaut group in 2003. He was a flight engineer of Expedition 39 and 40 to the International Space Station, in 2018 he returned to space as the Commander of Soyuz MS-08, and in 2022 he returned to space as the Commander of Soyuz MS-21.
+                                </p>
+                            </div>
+                        </div>
+                -->
+
+
+
+
+
+                <p class="text-center mb-20">As of May 2022, 258 individuals from 20 countries have visited the International Space Station. The vast majority of astronauts past and present hail from the countries most involved in the ISS's operations: USA, Russia, Europe, Japan, and Canada; however, many additional nationalities have been represented in space.
+                </p>
+                <img src="./photos/iss_visitors_map_042822.jpeg" alt="" class="mt-20 mx-auto">
+                <p class="text-white text-sm text-center mb-20">Countries represented on the ISS. Source: NASA</p>
+
+                <h2 class="text-white text-2xl mb-8 font-lato">
+                    What Do Astronauts Do On The International Space Station?
+                </h2>
+                <p class="text-white mb-16 font-lato">
+                    Astronauts certainly stay busy during their time on the space station. There are many ongoing experiments at a time, and the crew also has to ensure that the station is well maintained, meaning they spend a lot of their time testing, repairing, or replacing equipment. Crew members are also required to exercise for two hours per day in order to stay fit and keep their body in shape to fight against the natural atrophy that occurs in zero-gravity.
+                </p>
+                <h2 class="text-white text-2xl mb-8 font-lato">
+                    How Long Are The Missions?
+                </h2>
+                <p class="text-white mb-16 font-lato">
+                    ISS missions, or expeditions, typically last around six months. There are always at least three to six crewmembers on board to ensure proper maintenance as well as disaster prevention. Professional crews come from the United States, Russia, Japan, Canada, and Europe, but we have also seen other nations represented in the graphic above. The longest NASA expedition lasted 215 days by Mike Lopez-Alegria. Russian cosmonaut, Valeri Polyakov, spent a much longer 437 days in space during a single mission.
+                </p>
+                <h2 class="text-white text-2xl mb-8 font-lato">
+                    How Long Do You Have To Train Before You Fly In Space?
+                </h2>
+                <p class="text-white mb-16 font-lato">
+                    Astronauts are in constant training for space flight. The intial process involves learning about basic ISS systems, going on space walks, and operating the robotic arm. You continue this training throughout the waiting period for the next assignment. Once an astronuat is details to a flight, more specific training for the mission at hand proceeds. This can take as long as three years. The length of this training depends on how complicated the mission tasks are. ISS missions also require that you speak Russian, which adds additional time to the training process.
+                </p>
+                <h2 class="text-white text-2xl mb-8 font-lato">
+                    What Effects Does Space Flight Have On Your Body?
+                </h2>
+                <p class="text-white mb-16 font-lato">
+                    Astronauts' bodies adjust to space in many ways. Immediately upon entering zero gravity, the fluids in your legs and lower part of your body moves upwards towards your head. Feelings of a swollen head or face are frequent within the first days. That said, except for the occasional headache and congestion, the effects of this fluid shift is relatively mild. These feelings often go away as the astronaut adjusts after a few days, after which, nearly everyone is properly adjusted to the new environment. In terms of physical fitness, if you do not exercise, your bones and muscles will get weak. This is the primary reason astronauts are required to work out daily. Upon return to Earth, it also takes time to readjust and feelings of dizziness occur. Again, bodies adapt to new environments in different ways.
+                </p>
+                <h2 class="text-white text-2xl mb-8 font-lato">
+                    What Kind Of Food Do Astronauts Eat?
+                </h2>
+                <p class="text-white mb-32 font-lato">
+                    Astronauts bring several types of food when traveling in space. Most of the food has already been cooked and processed, and has been freeze dried and vacuum sealed. These pre-packaged meals can then be prepared by adding water and heated in a small oven in space. 
+                </p>
+
+
+
+
+
+              </div>
+            </div>
+
+
+            
+        </section>
+
+
+     
+
+
+
+        <footer class="bottom p-4 bg-black  shadow md:flex md:items-center md:justify-between md:p-6">
+          <span class="text-sm text-gray-200 sm:text-center">© 2022 <a href="https://orbital.io/"
+              class="hover:underline">Orbital.io</a>
+          </span>
+        </footer>
+
+
+
+        <link src="style.css"></link>
+
+
+	</body>
+</html>

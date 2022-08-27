@@ -1,0 +1,31 @@
+h1 {
+    font-family: "Exo 2", sans-serif;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+a {
+    font-family: "Lato", sans-serif;
+}
+
+.box {
+    inline-size: 150px;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+}
+
+#brand {
+    font-family: "Exo 2", sans-serif;
+}
+
+.headerlink {
+    font-family: "Exo 2", sans-serif;
+}
+
+
+  
+ 
+  

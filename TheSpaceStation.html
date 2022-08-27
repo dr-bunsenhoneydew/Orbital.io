@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link rel="stylesheet" href="style.css">
+        <link href="tailwind.css"rel="stylesheet" />
+		<title>Orbital.io</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Lato:wght@300&display=swap" rel="stylesheet">
+		<style>
+			body { margin: 0; -webkit-font-smoothing: antialiased; }
+            
+		</style>
+	</head>
+    <body class="h-full bg-black">
+        <nav class="bg-black shadow-lg">
+            <div class="max-w-6xl mx-auto px-4">
+              <div class="flex justify-between">
+                <div class="flex space-x-7">
+                  <div>
+                    <a href="#" class="flex items-center py-4 px-2">
+                      <img src="photos/astronaut2.jpg" alt="Logo" class="h-10 w-9 mr-6">
+                      <span id="brand" class="font-semibold text-blue-200 text-2xl">Orbital.io</span>
+                    </a>
+                  </div>
+                  <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-white  font-semibold ">Home</a>
+                    <a href="WhatsInSpace.html" class="py-4 px-2 text-white  font-semibold hover:text-blue-200 transition duration-300">What's in Space?</a>
+                    <a href="TheSpaceStation.html" class="py-4 px-2 text-white font-semibold hover:text-blue-200 transition duration-300 border-b-4 border-blue-200">The Space Station</a>
+                    <a href="WhosInSpace.html" class="py-4 px-2 text-white font-semibold hover:text-blue-200 transition duration-300">Who's In Space?</a>
+                  </div>
+                </div>
+    
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                  <svg class=" w-6 h-6 text-gray-500 hover:text-blue-200 "
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden mobile-menu text-center">
+              <ul class="">
+                <li><a href="index.html" class="block text-white text-sm px-2 py-4 hover:bg-blue-200 hover:text-black transition duration-300">Home</a></li>
+                <li><a href="WhatsInSpace.html" class="block text-white text-sm px-2 py-4 hover:bg-blue-200 hover:text-black transition duration-300">What's in Space?</a></li>
+                <li><a href="TheSpaceStation.html" class="block text-sm px-2 py-4 bg-blue-200 font-semibold">The Space Station</a></li>
+                <li><a href="WhosInSpace.html" class="block text-white text-sm px-2 py-4 hover:bg-blue-200 hover:text-black transition duration-300">Who's In Space?</a></li>
+              </ul>
+            </div>
+            <script>
+              const btn = document.querySelector("button.mobile-menu-button");
+              const menu = document.querySelector(".mobile-menu");
+              btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+              });
+            </script>
+        </nav>
+
+
+        <!--Hero Section-->
+        <section id= "hero" class="">
+            <div id="heroContainer">
+              <div class="text-white h-full bg-center bg-cover ml-24 mr-24">
+                <h1 class="text-white text-5xl mb-20 mt-32 font-exo text-center">What is the Space Station?</h1>
+                <p class="text-center mb-20">The International Space Station (ISS) is a multinational collaborative project including five participating space agencies: NASA (United States), Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada). The ownership and use of the international space station is governed by intergovernmental treaties and agreements, and the station itself serves as a research laboratory in which experiments are conducted across studies - Astrobiology, Astronomy, Meteorology, Physics, and others.
+                </p>
+                <img src="./photos/International_Space_Station.jpeg" alt="" class=" mx-auto">
+                <p class="text-white text-sm text-center">International Space Station as viewed from Space Shuttle. Source: NASA</p>
+                <p class="text-center mt-20">
+                  The ISS is divided into two sections: the Russian Orbital Segment (ROS) is     operated by Russia, while the United States Orbital Segment (USOS) is run by the United States and others. The first ISS component was launched in 1998, and the first long-term residents arrived on November 2, 2000. The station has since been continuously occupied ever since.
+                  <br><br>
+                  The ISS is a modular space station, meaning that certain modules can be added or removed from the existing structure, allowing for flexibility in it's construction. Today, the international space station consists of pressurized habitation modules, structural trusses, solar arrays, thermal radiators, docking ports, and experimental bays and robotic arms. Each piece has gradually been added over more than a decade of spaceflights and crews. The below infographic displays the current structure along with labels detailing several existing modules.
+                </p>
+                <img src="./photos/InfoGraphic.jpeg" alt="" class="mt-20 mx-auto">
+                <p class="text-white text-sm text-center  mb-20">Modular View of the International Space Station. Source: Visually</p>
+
+              </div>
+            </div>
+            <div class="text-center mb-32">
+              <a
+                href="WhosInSpace.html"
+                class="font-semibold text-white bg-blue-300 inline-block px-8 py-4 rounded-full font-lato mb-8 ml-16 mr-16"
+                >Up Next: Who's In Space?</a
+              >
+            </div>
+        </section>
+
+
+     
+
+
+
+        <footer class="bottom p-4 bg-black  shadow md:flex md:items-center md:justify-between md:p-6">
+          <span class="text-sm text-gray-200 sm:text-center">© 2022 <a href="https://orbital.io/"
+              class="hover:underline">Orbital.io</a>
+          </span>
+        </footer>
+
+
+
+        <link src="style.css"></link>
+
+
+	</body>
+</html>
