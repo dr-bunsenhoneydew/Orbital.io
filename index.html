@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link rel="stylesheet" href="style.css">
+        <link href="tailwind.css"rel="stylesheet" />
+		<title>Orbital.io</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&family=Lato:wght@300&display=swap" rel="stylesheet">
+		<style>
+			body { margin: 0; -webkit-font-smoothing: antialiased; }
+            
+		</style>
+	</head>
+    <body class="bg-black flex flex-col h-screen justify-between">
+
+      <div id="popUpEl" class="bg-black bg-opacity-75 fixed px-4 py-2 rounded-lg hidden">
+        <h2 class="text-white text-xs">
+          <span id="stationEl" class="font-lato"></span>
+          <span>Ground Station</span>
+        </h2>
+        <p id="stationCountry" class="box text-white font-bold text-md font-lato">Country</p>
+        <p id = "stationName" class="box text-white font-bold text-sm break-normal font-lato">Name</p>
+      </div>
+
+      <div id="popUpEl2" class="bg-black bg-opacity-75 fixed px-4 py-2 rounded-lg hidden">
+        <h2 class="text-white text-xs">
+          <span id="stationEl" class="font-lato"></span>
+          <span>ISS</span>
+        </h2>
+        <p id="stationCountry" class="box text-white font-bold text-md font-lato">International Space Station</p>
+
+      </div>
+
+
+      <div class="xl:flex h-screen bg-black">
+        <div class="xl:w-1/2 flex flex-col justify-center px-8 pt-16 xl:pt-0">
+          <nav class="py-7 bg-black shadow-lg mx-auto">
+            <div class="max-w-6xl mx-auto px-4">
+              <div class="flex justify-between">
+                <div class="flex space-x-7">
+                  <div>
+                    <a href="#" class="flex items-center py-4 px-2">
+                      <img src="photos/astronaut2.jpg" alt="Logo" class="h-10 w-9 mr-6">
+                      <span id="brand" class="font-semibold text-blue-200 text-2xl">Orbital.io</span>
+                    </a>
+                  </div>
+                  <div class="hidden md:flex items-center space-x-1">
+                    <a href="" class="py-4 px-2 text-white text-center border-b-4 border-blue-200 font-semibold ">Home</a>
+                    <a href="WhatsInSpace.html" class="py-4 px-2 text-white text-center font-semibold hover:text-blue-200 transition duration-300">What's in Space?</a>
+                    <a href="TheSpaceStation.html" class="py-4 px-2 text-white text-center font-semibold hover:text-blue-200 transition duration-300">The Space Station</a>
+                    <a href="WhosInSpace.html" class="py-4 px-2 text-white text-center font-semibold hover:text-blue-200 transition duration-300">Who's In Space?</a>
+                  </div>
+                </div>
+    
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                  <svg class=" w-6 h-6 text-gray-500 hover:text-blue-200 "
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="hidden mobile-menu text-center">
+              <ul class="">
+                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 bg-blue-200 font-semibold">Home</a></li>
+                <li><a href="WhatsInSpace.html" class="block text-white text-sm px-2 py-4 hover:bg-blue-200 hover:text-black transition duration-300">What's in Space?</a></li>
+                <li><a href="TheSpaceStation.html" class="block text-white text-sm px-2 py-4 hover:bg-blue-200 hover:text-black transition duration-300">The Space Station</a></li>
+                <li><a href="WhosInSpace.html" class="block text-white text-sm px-2 py-4 hover:bg-blue-200 hover:text-black transition duration-300">Who's In Space?</a></li>
+              </ul>
+            </div>
+            <script>
+              const btn = document.querySelector("button.mobile-menu-button");
+              const menu = document.querySelector(".mobile-menu");
+              btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+              });
+            </script>
+          </nav>
+          <div style="max-width:500px;" class="mx-auto text-center">
+            <h1 class="text-white text-5xl mb-8 font-exo leading-none">
+                Understanding What Is In Our Orbit, and Where
+            </h1>
+            <p class="text-white mb-8 font-lato">
+                While there are dozens of natural satellites in the solar system, for example our Moon, artificial satellites did not become a reality until the mid-20th century. The first artificial satellite was Sputnik, a small Russian probe that lifted off on Oct. 4, 1957. Since, we have added 8,260 individual satellites that orbit the Earth as of January 2022.
+            </p>
+            <div class="text-center">
+              <a
+                href="WhatsInSpace.html"
+                class="font-semibold text-white bg-blue-300 inline-block px-8 py-4 rounded-full font-lato"
+                >Learn More: What's in Orbit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="h-screen xl:w-1/2" id="canvasContainer">
+          <canvas></canvas>
+        </div>
+      </div>
+      
+      
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+      <link src="style.css"></link>
+      <script src="three.js"></script>
+      <script src="main.js"></script>
+	  </body>
+</html>
